@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cord Finance</title>
+    <meta name="description" content="Cord Finance">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="header" id="top">
+        <div class="container-fluid container-content">
+            <section class="col-md-12 col-lg-offset-1 col-lg-10 content">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <a href="index.html" class="header-logo"><img src="img/logo.png"></a>
+                    </div>
+                    <nav class="col-xs-5 header-nav">
+                        <a href="#" class="profile"><img src="img/avatar.jpg"><span class="hidden-xs">Robert Harreman</span></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="container-content container-fluid">
+        <nav class="progressbar hidden-sm hidden-xs">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul>
+                        <li class="done">Uitleg</li>
+                        <li class="active">Gegevens kiezen</li>
+                        <li>Inloggen DigiD</li>
+                        <li>Gegevens valideren</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wizard">
+            <div class="row">
+                <section class="col-md-12 col-lg-offset-1 col-lg-10 content">
+                    <div class="row">
+                        <article class="col-md-12">
+                            <div class="block">
+                                <ul class="wizard-counter hidden-md hidden-lg">
+                                    <li class="active">&#32;</li>
+                                    <li class="active">&#32;</li>
+                                    <li>&#32;</li>
+                                    <li>&#32;</li>
+                                </ul>
+
+                                <a href="#" class="action-link info-link" data-container="body" data-trigger="focus" tabindex="0" data-toggle="popover" data-placement="bottom" data-html="true" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum odio eget metus laoreet, quis tempor orci dictum." data-original-title="Hoe veilig is dit?"><i class="fa fa-info-circle"></i>Meer informatie</a>
+
+                                <h2 class="text-center">Gegevens automatisch ophalen met DigiD</h2>
+                                
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-offset-1 col-md-5">
+                                        <h3>Heeft u een partner?</h3>
+                                        <div class="btn-group switch" role="group" data-targets=".yes, .no" data-block=".partner-info">
+                                            <button type="button" class="btn btn-default" data-target=".yes" data-trigger="remove">Ja</button>
+                                            <button type="button" class="btn btn-default active" data-target=".no" data-trigger="add">Nee</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-offset-1 col-md-5">
+                                        <h3>Maak een keuze welke gegevens op te halen</h3>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="pension">
+                                            <label for="pension">Mijn Uniform Pensioen Overzicht</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="income-tax">
+                                            <label for="income-tax">Mijn vooraf ingevulde belastingaangifte</label>
+                                        </div>
+                                        <div class="checkbox disabled" disabled>
+                                            <input type="checkbox" id="uwv">
+                                            <label for="uwv">UWV informatie</label>
+                                        </div>
+                                        <div class="checkbox disabled" disabled>
+                                            <input type="checkbox" id="future-links">
+                                            <label for="future-links">BKR check</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="partner-info hide">
+                                            <h3>Welke partner gegevens?</h3>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="partner-pension">
+                                                <label for="partner-pension">Uniform Pensioen Overzicht</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="partner-income-tax">
+                                                <label for="partner-income-tax">Vooraf ingevulde belastingaangifte</label>
+                                            </div>
+                                            <div class="checkbox disabled" disabled>
+                                                <input type="checkbox" id="partner-uwv">
+                                                <label for="partner-uwv">UWV informatie</label>
+                                            </div>
+                                            <div class="checkbox disabled" disabled>
+                                                <input type="checkbox" id="partner-future-links">
+                                                <label for="partner-future-links">BKR check</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wizard-footer">
+                                    <a href="step-1.html" class="cancel">Vorige</a>
+                                    <span>of</span>
+                                    <a href="step-3.html" class="btn btn-primary">Volgende &#187;</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2015 Yellowtail | Algemene Voorwaarden</p>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

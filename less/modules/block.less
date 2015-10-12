@@ -1,0 +1,110 @@
+.block {
+	.box();
+	.transition(all 0.6s ease-out);
+	.translate(0, 0);
+	opacity: 1;
+	padding: 20px;
+
+	&-show {
+		.translate(100%, 0);
+		opacity: 0;
+	}
+
+	&-hide {
+		.transition(opacity 0.3s ease-in-out);
+		opacity: 0;
+	}
+
+	&-header {
+		padding-top: 20px;
+
+		p {
+			margin-bottom: 40px;
+			font-size: 16px;
+		}
+	}
+	
+	&-choice {
+		display: inline-block;
+		max-width: 208px;
+		border: 2px solid #e6e6e6;
+		border-radius: 4px;
+		margin-bottom: 90px;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 20px;
+		cursor: pointer;
+		.transition(all 0.2s);
+
+		.goal-img {
+			background-image: url("../img/wizard/goals.png");
+			background-repeat: no-repeat;
+			height: 107px;
+			width: 107px;
+			margin: 0 auto;
+
+			&.retirement {
+				background-position: 0 0;
+			}
+
+			&.education {
+				background-position: 0 -107px;
+			}
+
+			&.expense {
+				background-position: 0 -214px;
+			}
+		}
+
+		&.active, &:hover {
+			background: #48677d;
+			border-color: #48677d;
+			color: #fff;
+
+			.goal-img {
+				&.retirement {
+					background-position: -107px 0;
+				}
+
+				&.education {
+					background-position: -107px -107px;
+				}
+
+				&.expense {
+					background-position: -107px -214px;
+				}
+			}
+		}
+	}
+
+	&.map {
+		img {
+			width: 100%;
+			max-width: 600px;
+		}		
+	}
+}
+
+@media (max-width: 1200px) {
+	.block {
+		&-header {
+			padding-top: 15px;
+
+			.section-title {
+    			margin: 0 0 40px;
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+		}
+
+		&-trainer .inner .content p {
+		    min-height: 200px;
+		}
+		
+		&-choice {
+			margin-bottom: 20px;
+		}
+	}
+}

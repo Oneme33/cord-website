@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cord Finance</title>
+    <meta name="description" content="Cord Finance">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="header" id="top">
+        <div class="container-fluid container-content">
+            <section class="col-md-12 col-lg-offset-1 col-lg-10 content">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <a href="index.html" class="header-logo"><img src="img/logo.png"></a>
+                    </div>
+                    <nav class="col-xs-5 header-nav">
+                        <a href="#" class="profile"><img src="img/avatar.jpg"><span class="hidden-xs">Robert Harreman</span></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <nav class="container-fluid progressbar hidden-sm hidden-xs">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul>
+                    <li class="done">Uitleg</li>
+                    <li class="done">Gegevens kiezen</li>
+                    <li class="active">Inloggen DigiD</li>
+                    <li>Gegevens valideren</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid container-content wizard">
+        <div class="row">
+            <section class="col-md-12 col-lg-offset-1 col-lg-10 content">
+                <div class="row">
+                    <article class="col-md-12">
+                        <div class="block">
+                            <ul class="wizard-counter hidden-md hidden-lg">
+                                <li class="active">&#32;</li>
+                                <li class="active">&#32;</li>
+                                <li class="active">&#32;</li>
+                                <li>&#32;</li>
+                            </ul>
+                             
+                            <a href="#" class="action-link info-link" data-container="body" data-trigger="focus" tabindex="0" data-toggle="popover" data-placement="bottom" data-html="true" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum odio eget metus laoreet, quis tempor orci dictum." data-original-title="Hoe veilig is dit?"><i class="fa fa-info-circle"></i>Meer informatie</a>
+
+                            <h2 class="text-center">Gegevens automatisch ophalen met DigiD</h2>
+                            
+                            <hr>
+                            
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-5">
+                                    <h3>Voer uw DigiD informatie in</h3>
+                                    <div class="form-group icon-field">
+                                        <i class="fa fa-user big"></i>
+                                        <input class="form-control" type="text" name="user-name" id="user-name" placeholder="Gebruikersnaam">
+                                    </div>
+                                    <div class="form-group icon-field">
+                                        <i class="fa fa-key"></i>
+                                        <input class="form-control" type="password" name="password" id="password" placeholder="Wachtwoord">
+                                    </div>
+                                    <div class="checkbox terms">
+                                        <input type="checkbox" id="terms">
+                                        <label for="terms">Ik geef toestemming om met behulp van DigiD financiële informatie over mij en mijn partner op te halen en door te geven aan mijn financieel dienstverlener en ga akkoord met de algemene voorwaarden.</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5">
+                                    <div class="partner-container">
+                                        <h3>Voer uw partners DigiD informatie in</h3>
+                                        <div class="form-group icon-field">
+                                            <i class="fa fa-user big"></i>
+                                            <input class="form-control" type="text" name="user-name" id="user-name" placeholder="Gebruikersnaam">
+                                        </div>
+                                        <div class="form-group icon-field">
+                                            <i class="fa fa-key"></i>
+                                            <input class="form-control" type="password" name="password" id="password" placeholder="Wachtwoord">
+                                        </div>
+                                        <div class="form-group icon-field">
+                                            <i class="fa fa-lock big"></i>
+                                            <input class="form-control" type="text" name="bsn" id="bsn" placeholder="Burgerservicenummer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wizard-footer">
+                                <a href="step-2.html" class="cancel">Vorige</a>
+                                <span>of</span>
+                                <a href="step-4.html" class="btn btn-primary">Volgende &#187;</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="modal fade files-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="files-modal" aria-hidden="true" id="files-modal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn close" disabled="disabled" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="myModalLabel"><span class="loading">Uw gegevens worden opgehaald</span><span class="success hide">Gefeliciteerd!</span></h3>
+                </div>
+                <div class="modal-body clearfix">
+                    <div class="loading">
+                        <p>Binnen Cord Finance slaan wij geen informatie op, maar geven wij de relevante financiële informatie veilig door aan uw financieel dienstverlener.</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                        </div>
+                        <p class="text-center">Even geduld alstublieft</p>
+                    </div>
+                    <div class="success hide text-center">
+                        <i class="fa fa-check-circle"></i>
+                        <p class="text-center">Uw gegevens zijn succesvol opgeslagen</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="dashboard.html" class="btn btn-primary" disabled="disabled">Sluiten</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

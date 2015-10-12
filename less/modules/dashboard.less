@@ -1,0 +1,51 @@
+.dashboard {
+	&-info {
+		padding-top: 3px;
+		font-weight: 400;
+	}
+
+	&-buttons {
+		margin-top: 10px;
+	}
+
+	.block {
+		margin-bottom: 30px;
+	}
+
+	.mortgage {
+		i {
+			display: inline-block;
+		    font-size: 100px;
+		    color: #67AFC7;
+		    vertical-align: middle;
+		}
+
+		.text {
+			display: inline-block;
+			vertical-align: middle;
+
+			h3 {
+				margin: 0 0 5px 10px;
+				font-size: 30px;
+			}
+		}
+	}
+
+	.btn-circle {
+		margin: 0 50px 0 0px;
+	}	
+}
+
+@media (max-width: 992px) {
+	.dashboard .btn-circle {
+	    margin: 0 20px 20px 0px;
+
+	    &:last-child {
+	    	margin-bottom: 0;
+	    }
+	}
+
+	.dashboard .movie {
+		margin-bottom: 30px;
+	}
+}
