@@ -6061,6 +6061,7 @@ footer a:active {
   border-bottom-right-radius: 4px;
 }
 .wizard-counter li.active {
+  background: #67afc7;
   background-image: -webkit-linear-gradient(#8dc3d5, #8dc3d5 50%, #67afc7, 50%, #67afc7 100%, #c3325f);
   background-image: -o-linear-gradient(#8dc3d5, #8dc3d5 50%, #67afc7, 50%, #67afc7 100%, #c3325f);
   background-image: linear-gradient(#8dc3d5, #8dc3d5 50%, #67afc7, 50%, #67afc7 100%, #c3325f);
