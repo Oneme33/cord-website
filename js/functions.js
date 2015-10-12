@@ -29,7 +29,8 @@
 ;(function($) {
 	var $window = $(window),
 		$body = $('body'),
-		winHeight = $(window).height();
+		winHeight = $(window).height(),
+		$wizard = $('.wizard');
 
 	$('.container-content').css({minHeight: winHeight - $('header').outerHeight() - $('footer').outerHeight()});
 
