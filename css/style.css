@@ -5885,6 +5885,7 @@ footer a:active {
   transform: translate(0, 0);
   opacity: 1;
   padding: 20px;
+  position: relative;
 }
 .block-show {
   -webkit-transform: translate(100%, 0);
@@ -6039,6 +6040,7 @@ footer a:active {
   font-size: 0;
   margin: 3px 60px 0 0;
   position: absolute;
+  z-index: 2;
 }
 .wizard-counter li {
   display: inline-block;
