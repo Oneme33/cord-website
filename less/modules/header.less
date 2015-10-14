@@ -1,6 +1,5 @@
 .header {
 	height: 66px;
-	padding: 15px 0;
 	position: relative;
 	background: #6aacca;
 	#gradient.horizontal(#6aacca, #5db8bc);
@@ -15,13 +14,14 @@
 
 		img {
 			width: 100%;
-			max-width: 160px;
-			padding-top: 2px;
+		    max-width: 145px;
+		    margin-top: 10px;
 		}
 	}
 
 	&-nav {
 		text-align: right;
+		margin-top: 15px;
 
 		a {
 			color: #fff;
@@ -46,6 +46,19 @@
 
 		.btn {
 			padding: 0;
+		}
+	}
+
+	.profile {
+		&:after {
+			content: "";
+		    display: inline-block;
+		    width: 0;
+		    height: 0;
+		    border-left: 5px solid transparent;
+		    border-right: 5px solid transparent;
+		    border-top: 5px solid #FFF;
+		    margin: 0 0 2px 5px;
 		}
 	}
 }
