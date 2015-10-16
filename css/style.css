@@ -389,15 +389,15 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 14px;
+  font-size: 16px;
 }
 h5,
 .h5 {
-  font-size: 12px;
+  font-size: 14px;
 }
 h6,
 .h6 {
-  font-size: 11px;
+  font-size: 12px;
 }
 p {
   margin: 0 0 10px;
@@ -2374,13 +2374,13 @@ input[type="button"].btn-block {
   margin-left: 0;
 }
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .btn-group > .btn:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .btn-group > .btn-group {
   float: left;
@@ -2773,133 +2773,6 @@ input[type="button"].btn-block {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-}
-.modal-open {
-  overflow: hidden;
-}
-.modal {
-  display: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
-}
-.modal-content {
-  position: relative;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  background-clip: padding-box;
-  outline: 0;
-}
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000000;
-}
-.modal-backdrop.fade {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-.modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857143px;
-}
-.modal-header .close {
-  min-width: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55px;
-  height: 55px;
-  line-height: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 400;
-  background: none;
-}
-.modal-title {
-  margin: 0;
-  line-height: 1.42857143;
-}
-.modal-body {
-  position: relative;
-  padding: 15px;
-}
-.modal-footer {
-  padding: 15px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
-}
-.modal-footer .btn + .btn {
-  margin-left: 20px;
-  margin-bottom: 0;
-}
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
-}
-.modal-scrollbar-measure {
-  position: absolute;
-  top: -9999px;
-  width: 50px;
-  height: 50px;
-  overflow: scroll;
-}
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 600px;
-    margin: 120px auto;
-  }
-  .modal-sm {
-    width: 300px;
-  }
-}
-@media (min-width: 992px) {
-  .modal-lg {
-    width: 900px;
-  }
 }
 .tooltip {
   position: absolute;
@@ -3383,9 +3256,7 @@ input[type="button"].btn-block {
 .btn-group-vertical > .btn-group:before,
 .btn-group-vertical > .btn-group:after,
 .nav:before,
-.nav:after,
-.modal-footer:before,
-.modal-footer:after {
+.nav:after {
   content: " ";
   display: table;
 }
@@ -3397,8 +3268,7 @@ input[type="button"].btn-block {
 .form-horizontal .form-group:after,
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:after,
-.nav:after,
-.modal-footer:after {
+.nav:after {
   clear: both;
 }
 .center-block {
@@ -5665,7 +5535,7 @@ ul.checkmark.dark li:before {
   width: 100%;
   text-align: center;
   vertical-align: middle;
-  padding-top: 17px;
+  padding-top: 20px;
 }
 .numbering {
   counter-reset: my-badass-counter;
@@ -5690,6 +5560,7 @@ ul.checkmark.dark li:before {
 }
 .checkbox {
   margin-bottom: 20px;
+  vertical-align: middle;
 }
 .checkbox input {
   display: none;
@@ -5701,6 +5572,8 @@ ul.checkmark.dark li:before {
   border-color: #67afc7;
   background-color: #67afc7;
   text-align: center;
+  vertical-align: middle;
+  line-height: 1.2;
 }
 .checkbox label {
   position: relative;
@@ -5710,7 +5583,7 @@ ul.checkmark.dark li:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 2px;
   width: 15px;
   height: 15px;
   border: 1px solid #d2d2d2;
@@ -5720,15 +5593,20 @@ ul.checkmark.dark li:before {
 .checkbox.disabled {
   opacity: 0.5;
 }
-.checkbox.terms {
-  margin-top: 30px;
-}
 .radio label,
 .checkbox label {
   font-weight: 300;
 }
+.switch {
+  background-color: #fff;
+  border: 1px solid #D2D2D2;
+  border-radius: 4px;
+  padding: 2px;
+}
 .switch .btn-default {
-  min-width: 100px;
+  background: none;
+  border: none;
+  min-width: 80px;
 }
 .switch .btn-default:hover {
   color: #67afc7;
@@ -5741,6 +5619,7 @@ ul.checkmark.dark li:before {
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
+  border-radius: 4px;
 }
 .icon-field {
   position: relative;
@@ -5798,7 +5677,13 @@ ul.checkmark.dark li:before {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-@media (max-width: 800px) {
+.text-link {
+  font-weight: 400;
+}
+.text-link .fa {
+  padding: 0 5px;
+}
+@media (max-width: 992px) {
   .info-link {
     right: 0;
     top: -30px;
@@ -5862,6 +5747,11 @@ ul.checkmark.dark li:before {
   border-right: 5px solid transparent;
   border-top: 5px solid #FFF;
   margin: 0 0 2px 5px;
+}
+@media (max-width: 992px) {
+  .header .profile:after {
+    margin: 0 0 2px 0px;
+  }
 }
 footer {
   bottom: 0;
@@ -5969,28 +5859,6 @@ footer a:active {
   width: 100%;
   max-width: 600px;
 }
-@media (max-width: 1200px) {
-  .block-header {
-    padding-top: 15px;
-  }
-  .block-header .section-title {
-    margin: 0 0 40px;
-  }
-  .block-header p {
-    margin-bottom: 20px;
-  }
-  .block-trainer .inner .content p {
-    min-height: 200px;
-  }
-  .block-choice {
-    margin-bottom: 20px;
-  }
-}
-.modal .success .fa-check-circle {
-  font-size: 50px;
-  margin-bottom: 10px;
-  color: #67AFC7;
-}
 .auth {
   padding-top: 40px;
 }
@@ -6042,6 +5910,22 @@ footer a:active {
 .auth-footer p {
   margin: 0;
   line-height: 65px;
+}
+@media (max-width: 992px) {
+  .auth {
+    padding-top: 0;
+  }
+  .auth .block .form img {
+    margin-top: 30px;
+    max-height: 80px;
+  }
+  .auth .block,
+  .auth .auth-footer {
+    border-radius: 0;
+  }
+  .auth .block h2 {
+    padding: 20px 0 10px;
+  }
 }
 .wizard {
   padding-top: 50px;
@@ -6120,11 +6004,12 @@ footer a:active {
 }
 .wizard .partner-container,
 .wizard .partner-info {
-  background: #F5F5F5;
+  background: #F8F8F8;
   border: 1px solid #D2D2D2;
   padding: 20px;
   margin-top: -20px;
   border-radius: 6px;
+  margin-bottom: 20px;
 }
 .wizard .download-button {
   margin: 15px 0 30px;
@@ -6134,9 +6019,9 @@ footer a:active {
   margin-right: 10px;
 }
 .wizard .validation {
-  background: #F5F5F5;
+  background: #F8F8F8;
   border: 1px solid #D2D2D2;
-  padding: 20px;
+  padding: 20px 5px;
   margin-left: 0px;
   margin-right: 0;
   border-radius: 6px;
@@ -6146,7 +6031,7 @@ footer a:active {
   font-weight: 400;
   padding-left: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .wizard .block {
     margin-bottom: 50px;
   }
@@ -6168,6 +6053,15 @@ footer a:active {
   .wizard .partner-info {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .wizard .validation {
+    padding: 15px 0;
+  }
+  .wizard .validation .row p:nth-child(2) {
+    padding-left: 15px;
+  }
+  .wizard .movie {
+    margin-bottom: 30px;
   }
 }
 .progressbar {
@@ -6337,6 +6231,9 @@ footer a:active {
   padding-bottom: 5px;
   border-top: none;
   padding-top: 0;
+}
+.widget-personal .text-link {
+  margin-top: 10px;
 }
 @media (max-width: 992px) {
   .widget-didyouknow p {
