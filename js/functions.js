@@ -150,6 +150,14 @@
 
 	$('[data-toggle="popover"]').popover();
 
+	$body.on('click touchstart', function(e) {
+		var $target = $(e.target);
+
+		if( $target.data('toggle') !== 'popover' && $target.parents('.popover.in').length === 0 ) { 
+			$('[data-toggle="popover"]').popover('hide');
+		}
+	});
+
 	$('.switch button').on('click', function(e) {
 		var $this = $(this),
 			$switch = $this.parents('.switch');
