@@ -4,7 +4,7 @@
 		winHeight = $(window).height(),
 		$wizard = $('.wizard');
 
-		$('html')toggleClass('no-js js');
+	$('html').toggleClass('no-js js');
 
 	$('.container-content').css({minHeight: winHeight - $('header').outerHeight() - $('footer').outerHeight()});
 
