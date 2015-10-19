@@ -2911,7 +2911,7 @@ input[type="button"].btn-block {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 14px;
+  font-size: 12px;
   background-color: #ffffff;
   background-clip: padding-box;
   border: 1px solid #cccccc;
@@ -5766,11 +5766,6 @@ footer p {
   line-height: 50px;
   margin: 0;
 }
-footer a,
-footer a:hover,
-footer a:active {
-  color: #015da8;
-}
 .block {
   background: #fff;
   border-radius: 6px;
@@ -6183,6 +6178,9 @@ footer a:active {
 }
 .dashboard .btn-circle {
   margin: 0 50px 0 0px;
+}
+.dashboard.terms p {
+  margin-bottom: 30px;
 }
 @media (max-width: 992px) {
   .dashboard .btn-circle {
