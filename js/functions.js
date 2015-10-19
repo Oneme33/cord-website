@@ -31,7 +31,7 @@
 		var $target = $(e.target);
 
 		if( $target.data('toggle') !== 'popover' && $target.parents('[data-toggle="popover"]').length === 0  && $target.parents('.popover.in').length === 0 ) { 
-			$('[data-toggle="popover"]').popover('hide');
+			$('[data-toggle="popover"]').blur();
 		}
 	});
 
