@@ -24,59 +24,6 @@
 			font-size: 16px;
 		}
 	}
-	
-	&-choice {
-		display: inline-block;
-		max-width: 208px;
-		border: 2px solid #e6e6e6;
-		border-radius: 4px;
-		margin-bottom: 90px;
-		margin-left: 15px;
-		margin-right: 15px;
-		padding: 20px;
-		cursor: pointer;
-		.transition(all 0.2s);
-
-		.goal-img {
-			background-image: url("../img/wizard/goals.png");
-			background-repeat: no-repeat;
-			height: 107px;
-			width: 107px;
-			margin: 0 auto;
-
-			&.retirement {
-				background-position: 0 0;
-			}
-
-			&.education {
-				background-position: 0 -107px;
-			}
-
-			&.expense {
-				background-position: 0 -214px;
-			}
-		}
-
-		&.active, &:hover {
-			background: #48677d;
-			border-color: #48677d;
-			color: #fff;
-
-			.goal-img {
-				&.retirement {
-					background-position: -107px 0;
-				}
-
-				&.education {
-					background-position: -107px -107px;
-				}
-
-				&.expense {
-					background-position: -107px -214px;
-				}
-			}
-		}
-	}
 
 	&.map {
 		img {

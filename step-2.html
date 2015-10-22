@@ -21,7 +21,7 @@
                     </div>
                     <nav class="col-xs-5 header-nav">
                         <a href="#" class="btn btn-link profile" data-trigger="focus" tabindex="0" data-toggle="popover" data-container="body" data-html="true" data-placement="bottom" data-content='
-                    <a href="login.html" class="popover-name"><i class="fa fa-sign-out"></i><span>Logout</span></a>'><span class="avatar"><i class="fa fa-user"></i></span><span class="hidden-xs">Robert Harreman</span></a>
+                    <a href="login.html" class="popover-name"><i class="fa fa-sign-out"></i><span>Afmelden</span></a>'><span class="avatar"><i class="fa fa-user"></i></span><span class="hidden-xs">Robert Harreman</span></a>
                     </nav>
                 </div>
             </div>
@@ -55,30 +55,20 @@
                                     <li>&#32;</li>
                                 </ul>
 
-                                <a href="#" class="action-link info-link" data-container="body" data-trigger="focus" tabindex="0" data-toggle="popover" data-placement="bottom" data-html="true" title="" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum odio eget metus laoreet, quis tempor orci dictum." data-original-title="Hoe veilig is dit?"><i class="fa fa-info-circle"></i>Meer informatie</a>
-
-                                <h2 class="text-center">Gegevens automatisch ophalen met DigiD</h2>
+                                <h2 class="text-center">Gegevens kiezen</h2>
                                 
                                 <hr>
+
                                 <div class="row">
-                                    <div class="col-md-offset-1 col-md-5">
-                                        <h3>Heeft u een partner?</h3>
-                                        <div class="btn-group switch" role="group" data-targets=".yes, .no" data-block=".partner-info">
-                                            <button type="button" class="btn btn-default" data-target=".yes" data-trigger="remove">Ja</button>
-                                            <button type="button" class="btn btn-default active" data-target=".no" data-trigger="add">Nee</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-offset-1 col-md-5">
+                                    <div class="col-md-offset-1 col-md-5 checklist">
                                         <h3>Maak een keuze welke gegevens op te halen</h3>
                                         <div class="checkbox">
                                             <input type="checkbox" id="pension">
-                                            <label for="pension">Mijn Uniform Pensioen Overzicht</label>
+                                            <label for="pension">Mijn Uniform Pensioen Overzicht (UPO) <a href="#" class="action-link" data-container="body" data-trigger="focus" tabindex="0" data-toggle="popover" data-placement="bottom" data-html="true" title="" data-content="Vink aan indien u wenst dat wij uw pensioengegevens voor u (en eventueel voor uw partner) ophalen bij Mijnpensioenoverzicht.nl." data-original-title="Meer informatie"><i class="fa fa-info-circle"></i></a></label>
                                         </div>
                                         <div class="checkbox">
                                             <input type="checkbox" id="income-tax">
-                                            <label for="income-tax">Mijn vooraf ingevulde belastingaangifte</label>
+                                            <label for="income-tax">Mijn Vooraf Ingevulde belasting Aangifte (VIA) <a href="#" class="action-link" data-container="body" data-trigger="focus" tabindex="0" data-toggle="popover" data-placement="bottom" data-html="true" title="" data-content="Vink aan indien u wenst dat wij uw Voorlopige aangifte Inkomsten belasting voor u (en eventueel voor uw partner) ophalen bij de Belastingdienst." data-original-title="Meer informatie"><i class="fa fa-info-circle"></i></a></label>
                                         </div>
                                         <div class="checkbox disabled" disabled>
                                             <input type="checkbox" id="uwv">
@@ -90,27 +80,13 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-5">
-                                        <div class="partner-info hide">
-                                            <h3>Welke partner gegevens?</h3>
-                                            <div class="checkbox">
-                                                <input type="checkbox" id="partner-pension">
-                                                <label for="partner-pension">Uniform Pensioen Overzicht</label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <input type="checkbox" id="partner-income-tax">
-                                                <label for="partner-income-tax">Vooraf ingevulde belastingaangifte</label>
-                                            </div>
-                                            <div class="checkbox disabled" disabled>
-                                                <input type="checkbox" id="partner-uwv">
-                                                <label for="partner-uwv">UWV informatie</label>
-                                            </div>
-                                            <div class="checkbox disabled" disabled>
-                                                <input type="checkbox" id="partner-future-links">
-                                                <label for="partner-future-links">BKR check</label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div class="col-md-offset-1 col-md-5">
+                                       <h3>Wilt u ook uw partner gegevens ophalen? <a href="#" class="action-link" data-container="body" data-trigger="focus" tabindex="0" data-toggle="popover" data-placement="bottom" data-html="true" title="" data-content="Indien u 'Wilt u ook uw partner gegevens ophalen?' met ja beantwoord dan wordt u in het volgende scherm gevraagd ook het DigiD en het Burgerservicenummer van uw partner in te vullen." data-original-title="Meer informatie"><i class="fa fa-info-circle"></i></a></h3>
+                                       <div class="btn-group switch" role="group" data-targets=".yes, .no">
+                                           <button type="button" class="btn btn-default" data-target=".yes" data-trigger="remove">Ja</button>
+                                           <button type="button" class="btn btn-default active" data-target=".no" data-trigger="add">Nee</button>
+                                       </div>
+                                   </div>
                                 </div>
 
                                 <div class="wizard-footer">
@@ -127,7 +103,7 @@
     </div>
 
     <footer>
-        <p>© 2015 Yellowtail | <a href="terms.html">Algemene Voorwaarden</a></p>
+        <p>© 2015 Yellowtail | <a href="terms.html">Algemene Voorwaarden</a> | <a href="about.html">Over Cord Finance</a></p>
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

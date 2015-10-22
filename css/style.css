@@ -2911,7 +2911,7 @@ input[type="button"].btn-block {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #ffffff;
   background-clip: padding-box;
   border: 1px solid #cccccc;
@@ -5344,7 +5344,7 @@ input[type="button"].btn-block {
   top: 0;
   right: 100%;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #fff;
   pointer-events: none;
 }
@@ -5491,7 +5491,7 @@ ul.checkmark.dark li:before {
 }
 .action-link i {
   font-size: 18px;
-  padding-right: 5px;
+  padding: 0 5px;
   vertical-align: middle;
 }
 .info-link {
@@ -5558,6 +5558,9 @@ ul.checkmark.dark li:before {
   font-size: 14px;
   border-radius: 4px;
 }
+.checklist {
+  margin-bottom: 40px;
+}
 .checkbox {
   margin-bottom: 20px;
   vertical-align: middle;
@@ -5592,6 +5595,10 @@ ul.checkmark.dark li:before {
 }
 .checkbox.disabled {
   opacity: 0.5;
+  pointer-events: none;
+}
+.checkbox.terms {
+  font-size: 12px;
 }
 .radio label,
 .checkbox label {
@@ -5653,6 +5660,7 @@ ul.checkmark.dark li:before {
   margin-top: 10px;
   display: block;
   position: relative;
+  max-width: 360px;
 }
 .file-upload .form-control[disabled] {
   cursor: default;
@@ -5719,7 +5727,7 @@ ul.checkmark.dark li:before {
 }
 .header-nav {
   text-align: right;
-  margin-top: 17px;
+  margin-top: 16px;
 }
 .header-nav a {
   color: #fff;
@@ -5761,13 +5769,14 @@ ul.checkmark.dark li:before {
   color: #5FB6BE;
   position: relative;
   display: inline-block;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   overflow: hidden;
+  z-index: 9999;
 }
 .header .profile .avatar i {
   position: absolute;
   bottom: -3px;
-  left: 4px;
+  left: 3px;
   font-size: 28px;
 }
 @media (max-width: 992px) {
@@ -5827,54 +5836,6 @@ footer p {
 .block-header p {
   margin-bottom: 40px;
   font-size: 16px;
-}
-.block-choice {
-  display: inline-block;
-  max-width: 208px;
-  border: 2px solid #e6e6e6;
-  border-radius: 4px;
-  margin-bottom: 90px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 20px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.block-choice .goal-img {
-  background-image: url("../img/wizard/goals.png");
-  background-repeat: no-repeat;
-  height: 107px;
-  width: 107px;
-  margin: 0 auto;
-}
-.block-choice .goal-img.retirement {
-  background-position: 0 0;
-}
-.block-choice .goal-img.education {
-  background-position: 0 -107px;
-}
-.block-choice .goal-img.expense {
-  background-position: 0 -214px;
-}
-.block-choice.active,
-.block-choice:hover {
-  background: #48677d;
-  border-color: #48677d;
-  color: #fff;
-}
-.block-choice.active .goal-img.retirement,
-.block-choice:hover .goal-img.retirement {
-  background-position: -107px 0;
-}
-.block-choice.active .goal-img.education,
-.block-choice:hover .goal-img.education {
-  background-position: -107px -107px;
-}
-.block-choice.active .goal-img.expense,
-.block-choice:hover .goal-img.expense {
-  background-position: -107px -214px;
 }
 .block.map img {
   width: 100%;
@@ -6205,8 +6166,12 @@ footer p {
 .dashboard .btn-circle {
   margin: 0 50px 0 0px;
 }
-.dashboard.terms p {
+.dashboard.doc p {
   margin-bottom: 30px;
+}
+.dashboard .numbering {
+  counter-reset: my-badass-counter;
+  margin-top: 40px;
 }
 @media (max-width: 992px) {
   .dashboard .btn-circle {
